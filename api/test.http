@@ -1,0 +1,27 @@
+get http://localhost:5000/api/champ-mastery/zsZZw2wE3dL16u8s0YV24Un5NCDjHZ4S0nNqHL69YwWpZVU
+// Get champ mastery with summonerId param
+
+###
+get http://localhost:5000/api/summoner-mastery-id/zsZZw2wE3dL16u8s0YV24Un5NCDjHZ4S0nNqHL69YwWpZVU/245
+// Get summoner full mastery with summonerId and summonerId params
+
+###
+get http://localhost:5000/api/summoner-mastery-total/zsZZw2wE3dL16u8s0YV24Un5NCDjHZ4S0nNqHL69YwWpZVU
+// Get summoner total mastery with summonerId param
+
+###
+get http://localhost:5000/api/summoner-match-history/Ia0rhpZrDxF9n8fv4UnKtAzXByHarQJjfDUd3UGPR7dvgIo
+// Get summoner match history with accountId param
+
+###
+get http://localhost:5000/api/summoner-match/3704102682
+// Get summoner specific match with matchId param
+
+###
+get http://localhost:5000/api/euw-ranked-top
+// Get top rank players (EUW) - no param
+
+###
+get http://localhost:5000/api/summoner/Selling%20Ganks%203K
+// Get summoner by name param
+

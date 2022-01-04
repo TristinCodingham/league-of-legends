@@ -1,40 +1,36 @@
 {
-  "name": "toolbox",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.2"
-  },
+  "name": "league-of-legends",
+  "version": "1.0.0",
+  "description": "A fictional gaming webapp for League of Legends (Riot Games)",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "install": "npm install && cd client/ && npm install",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "cd client/ && npm start",
+    "webapp-dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "webapp-prod": "concurrently \"npm start\" \"npm run client\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TristinCodingham/league-of-legends.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "Tristin Cunningham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TristinCodingham/league-of-legends/issues"
+  },
+  "homepage": "https://github.com/TristinCodingham/league-of-legends#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "dot-env": "^0.0.1",
+    "nodemon": "^2.0.15"
   }
 }
